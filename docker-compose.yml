@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  16-bits-back-end:
+    image: "webscrap_backend"
+    container_name: webscrap_backend
+    ports:
+      - "8083:8083"
+
+  16-bits-front-end:
+    image: "react_aktien"
+    container_name: react_aktien
+    ports:
+      - "3000:3000"
+    
